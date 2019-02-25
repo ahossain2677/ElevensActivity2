@@ -32,7 +32,7 @@ public class Deck {
      * @param suits is an array containing all of the card suits.
      * @param values is an array containing all of the card point values.
      */
-    public Deck(String[] ranks, String[] suits, int[] values) {
+    public Deck(String[] ranks, String[] suits, int[] values) {		//Constructor for arraylist of deck
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
@@ -41,7 +41,7 @@ public class Deck {
      * Determines if this deck is empty (no undealt cards).
      * @return true if this deck is empty, false otherwise.
      */
-    public boolean isEmpty() {
+    public boolean isEmpty() {				//This method should return true when the size of the deck is 0; false otherwise.
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
@@ -49,7 +49,7 @@ public class Deck {
      * Accesses the number of undealt cards in this deck.
      * @return the number of undealt cards in this deck.
      */
-    public int size() {
+    public int size() {					//This method returns the number of cards in the deck that are left to be dealt.
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
