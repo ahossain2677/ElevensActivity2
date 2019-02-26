@@ -34,6 +34,17 @@ public class Deck {
      */
     public Deck(String[] ranks, String[] suits, int[] values) {		//Constructor for arraylist of deck
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+    list<Card>Cards = new Arraylist<Card>();
+	    for(int x=1;x<13;x++)
+	    {
+		    card.add(new card(rank[x],suits[y],value[x]));
+		    if(x=13)
+		    {
+			y=1;
+			    x=1;
+		    }
+	    }
+    
     }
 
 
@@ -43,6 +54,14 @@ public class Deck {
      */
     public boolean isEmpty() {				//This method should return true when the size of the deck is 0; false otherwise.
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+    	if(Arraylist.length>0)
+	{
+		return false;
+	}
+    else
+    {
+	    return true; 
+    }  
     }
 
     /**
@@ -50,7 +69,8 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {					//This method returns the number of cards in the deck that are left to be dealt.
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+	   /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+      System.out.println(ArrayList.size());
     }
 
     /**
@@ -66,8 +86,16 @@ public class Deck {
      * @return the card just dealt, or null if all the cards have been
      *         previously dealt.
      */
-    public Card deal() {
+    public Card deal() {			//
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+   		double randomDouble = Math.Random();	//Work to get a random integer
+	 	int randomInt = (int)(randomDouble *52);//
+	    
+	    List<Card>cards = new ArrayList2<card>();
+	    while(ArrayList2.length<52)
+	    {
+		    ArrayList2.add(ArrayList.get(randomInt));//reprinting random cards from the ordered deck 
+	    }
     }
 
     /**
