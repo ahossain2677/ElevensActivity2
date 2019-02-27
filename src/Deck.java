@@ -95,6 +95,7 @@ public class Deck {
 	    while(ArrayList2.length<52)
 	    {
 		    ArrayList2.add(ArrayList.get(randomInt));//reprinting random cards from the ordered deck 
+	    		ArrayList.remove(randomInt);//remove added cards from original deck 
 	    }
     }
 
